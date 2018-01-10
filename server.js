@@ -9,9 +9,9 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
 // stops everything else after from rendering since we dont call next function. comment this out to run server correctly.
-app.use((req, res, next) => {
-  res.render('maintenence.hbs');
-});
+//app.use((req, res, next) => {
+//  res.render('maintenence.hbs');
+//});
 
 app.use(express.static(__dirname + '/public'));
 
